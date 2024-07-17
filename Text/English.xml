@@ -12,6 +12,8 @@
 <entitydescription.drunkensailor_schematic>Allows the reader to learn how to fabricate Rum.</entitydescription.drunkensailor_schematic>
 <entityname.bigguns_schematic>Handcannon Schematic</entityname.bigguns_schematic>
 <entitydescription.bigguns_schematic>Allows the reader to learn how to fabricate the Handcannon and Handcannon Rounds.</entitydescription.bigguns_schematic>
+<entityname.dontpushit_schematic>Grenedier Schematic</entityname.dontpushit_schematic>
+<entitydescription.dontpushit_schematic>Allows the reader to learn how to fabricate the Bandolier and Explosive Slug.</entitydescription.dontpushit_schematic>
 
 <!-- Talents -->
  <talentname.known_schematic_gunsmith>Known Schematic: Gunsmith</talentname.known_schematic_gunsmith>
@@ -22,5 +24,7 @@
  <talentdescription.known_schematic_drunkensailor>You've read the Rum Schematic.</talentdescription.known_schematic_drunkensailor>
  <talentname.known_schematic_bigguns>Known Schematic: Handcannon</talentname.known_schematic_bigguns>
  <talentdescription.known_schematic_bigguns>You've read the Handcannon Schematic.</talentdescription.known_schematic_bigguns>
+ <talentname.known_schematic_dontpushit>Known Schematic: Grenedier</talentname.known_schematic_dontpushit>
+ <talentdescription.known_schematic_dontpushit>You've read the Grenedier Schematic.</talentdescription.known_schematic_dontpushit>
 
 </infotexts>

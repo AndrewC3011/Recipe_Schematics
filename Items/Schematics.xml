@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-<!--Blank Blueprint. Can be used to copy and fabricate new schematics for complex recipes.-->
-<!-- Decide whether this is worth keeping. Would a system to copy schematics be worth it?-->
+<!-- Blank Blueprint. Can be used to copy and fabricate new schematics for complex recipes. -->
+<!-- Decide whether this is worth keeping. Would a system to copy schematics be worth it? -->
 <Item name="" identifier="blank_blueprint" description="" category="Misc" tags="smallitem,schematic" maxstacksize="32" maxstacksizecharacterinventory="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="20,39,162,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
     <PreferredContainer primary="storagecab"/>
     <PreferredContainer secondary="researchcontainer,outpostengcab" spawnprobability="0.1"/>
@@ -22,7 +22,7 @@
     </Price>  
 </Item>
 <!-- Captain -->
-<!--Gunsmithing Schematic-->
+<!-- Gunsmithing Schematic -->
 <Item name="" identifier="gunsmith_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
     <PreferredContainer primary="storagecab"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.06"/>
@@ -44,7 +44,7 @@
         <Price storeidentifier="merchantcity"/>
     </Price>
 </Item>
-<!--Cigar Schematic-->
+<!-- Cigar Schematic -->
 <Item name="" identifier="sailorwithnoname_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
     <PreferredContainer primary="storagecab"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.06"/>
@@ -66,7 +66,7 @@
         <Price storeidentifier="merchantcity"/>
     </Price>
 </Item>
-<!--Rum Schematic-->
+<!-- Rum Schematic-->
 <Item name="" identifier="drunkensailor_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
     <PreferredContainer primary="storagecab"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.02"/>
@@ -88,7 +88,7 @@
         <Price storeidentifier="merchantcity"/>
     </Price>
 </Item>
-<!--Handcannon Schematic-->
+<!-- Handcannon Schematic -->
 <Item name="" identifier="bigguns_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
     <PreferredContainer primary="storagecab"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.01"/>
@@ -111,8 +111,28 @@
     </Price>
 </Item>
 <!--Security Officer-->
-<!--Don't Push It Schematic-->
-
+<!--Grenadier Schematic-->
+<Item name="" identifier="dontpushit_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab"/>
+    <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.06"/>
+    <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab,abandonedarmcab,piratearmcab,wreckarmcab" spawnprobability="0.03"/>
+    <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="367,194,12,44"  origin="0.5,0.5" depth="0.8" />
+    <InventoryIcon texture="Content/Items/Misc/scribble1.png" sourcerect="0,0,768,1024" origin="0.5,0.5" />
+    <Body width="35" height="40" density="8" />
+    <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
+        <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <Conditional Condition="lte 0" />
+            <GiveTalentInfo talentidentifiers="known_schematic_dontpushit"/>
+            <RemoveItem />
+        </StatusEffect>
+    </Holdable>
+    <Price baseprice="2000" minleveldifficulty="10" minavailable="1" buyingpricemultiplier="3">
+        <Price storeidentifier="merchantarmory" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantcity"/>
+    </Price>
+</Item>
 </Items>
 
     <!--

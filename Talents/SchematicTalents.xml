@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Talents>
-    <!--Captain-->
+<!--Captain-->
 <Talent identifier="known_schematic_gunsmith">
         <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="5,3" sheetelementsize="128,128"/>
         <Description tag="talentdescription.known_schematic_gunsmith"/>
@@ -34,5 +34,15 @@
         </Description>
         <AddedRecipe itemidentifier="handcannon" />
         <AddedRecipe itemidentifier="handcannonround" />
+</Talent>
+<!--Security Officer-->
+<Talent identifier="known_schematic_dontpushit">
+  <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="4,7" sheetelementsize="128,128"/>
+  <Description tag="talentdescription.known_schematic_dontpushit"/>
+  <Description tag="talentdescription.unlockrecipe">
+    <Replace tag="[itemname]" value="entityname.bandolier,entityname.explosiveslug" color="gui.orange" />
+  </Description>
+  <AddedRecipe itemidentifier="bandolier" />
+  <AddedRecipe itemidentifier="explosiveslug" />
 </Talent>
 </Talents>
