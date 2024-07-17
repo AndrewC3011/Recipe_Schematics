@@ -110,8 +110,9 @@
         <Price storeidentifier="merchantcity"/>
     </Price>
 </Item>
-<!--Security Officer-->
-<!--Grenadier Schematic-->
+<!-- /Captain -->
+<!-- Security Officer -->
+<!-- Grenadier Schematic -->
 <Item name="" identifier="dontpushit_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
     <PreferredContainer primary="storagecab"/>
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.06"/>
@@ -127,12 +128,37 @@
             <RemoveItem />
         </StatusEffect>
     </Holdable>
-    <Price baseprice="2000" minleveldifficulty="10" minavailable="1" buyingpricemultiplier="3">
+    <Price baseprice="500" minleveldifficulty="10" minavailable="1" buyingpricemultiplier="4">
         <Price storeidentifier="merchantarmory" />
         <Price storeidentifier="merchantmilitary" />
         <Price storeidentifier="merchantcity"/>
     </Price>
 </Item>
+<!--/Security Officer-->
+<!-- Doctor -->
+<!-- Autoinjector Schematic -->
+<Item name="" identifier="medicalcompanion_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab"/>
+    <PreferredContainer secondary="abandonedmedcab,piratemedcab,wreckmedcab" spawnprobability="0.06"/>
+    <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab,abandonedarmcab,piratearmcab,wreckarmcab" spawnprobability="0.03"/>
+    <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="367,194,12,44"  origin="0.5,0.5" depth="0.8" />
+    <InventoryIcon texture="Content/Items/Misc/scribble1.png" sourcerect="0,0,768,1024" origin="0.5,0.5" />
+    <Body width="35" height="40" density="8" />
+    <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
+        <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <Conditional Condition="lte 0" />
+            <GiveTalentInfo talentidentifiers="known_schematic_medicalcompanion"/>
+            <RemoveItem />
+        </StatusEffect>
+    </Holdable>
+    <Price baseprice="500" minleveldifficulty="10" minavailable="1" buyingpricemultiplier="4">
+        <Price storeidentifier="merchantarmory" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantcity"/>
+    </Price>
+</Item>
+<!-- /Doctor -->
 </Items>
 
     <!--

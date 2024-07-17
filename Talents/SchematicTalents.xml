@@ -45,4 +45,13 @@
   <AddedRecipe itemidentifier="bandolier" />
   <AddedRecipe itemidentifier="explosiveslug" />
 </Talent>
+<!-- Medical Doctor-->
+<Talent identifier="known_schematic_medicalcompanion">
+  <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,5" sheetelementsize="128,128"/>
+  <Description tag="talentdescription.known_schematic_medicalcompanion"/>
+  <Description tag="talentdescription.unlockrecipe">
+    <Replace tag="[itemname]" value="entityname.autoinjector" color="gui.orange" />
+  </Description>
+  <AddedRecipe itemidentifier="autoinjector" />
+</Talent>
 </Talents>
