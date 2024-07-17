@@ -14,8 +14,8 @@
 <entitydescription.bigguns_schematic>Allows the reader to learn how to fabricate the Handcannon and Handcannon Rounds.</entitydescription.bigguns_schematic>
 <entityname.dontpushit_schematic>Grenedier Schematic</entityname.dontpushit_schematic>
 <entitydescription.dontpushit_schematic>Allows the reader to learn how to fabricate the Bandolier and Explosive Slug.</entitydescription.dontpushit_schematic>
-<entityname.medicalcompanion_schematic>Autoinjector Schematic</entityname.medicalcompanion_schematic>
-<entitydescription.medicalcompanion_schematic>Allows the reader to learn how to fabricate the Autoinjector.</entitydescription.medicalcompanion_schematic>
+<entityname.medicalcompanion_schematic>Autoinjector Headset Schematic</entityname.medicalcompanion_schematic>
+<entitydescription.medicalcompanion_schematic>Allows the reader to learn how to fabricate the Autoinjector Headset.</entitydescription.medicalcompanion_schematic>
 
 
 <!-- Talents -->
@@ -29,7 +29,7 @@
  <talentdescription.known_schematic_bigguns>You've read the Handcannon Schematic.</talentdescription.known_schematic_bigguns>
  <talentname.known_schematic_dontpushit>Known Schematic: Grenedier</talentname.known_schematic_dontpushit>
  <talentdescription.known_schematic_dontpushit>You've read the Grenedier Schematic.</talentdescription.known_schematic_dontpushit>
- <talentname.known_schematic_medicalcompanion>Known Schematic: Autoinjector</talentname.known_schematic_medicalcompanion>
- <talentdescription.known_schematic_medicalcompanion>You've read the Autoinjector Schematic.</talentdescription.known_schematic_medicalcompanion
+ <talentname.known_schematic_medicalcompanion>Known Schematic: Autoinjector Headset</talentname.known_schematic_medicalcompanion>
+ <talentdescription.known_schematic_medicalcompanion>You've read the Autoinjector Headset Schematic.</talentdescription.known_schematic_medicalcompanion
     >
 </infotexts>
