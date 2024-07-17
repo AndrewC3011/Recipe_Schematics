@@ -54,4 +54,12 @@
   </Description>
   <AddedRecipe itemidentifier="autoinjectorheadset" />
 </Talent>
+<Talent identifier="known_schematic_nopressure">
+  <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,1" sheetelementsize="128,128"/>
+  <Description tag="talentdescription.known_schematic_nopressure"/>
+  <Description tag="talentdescription.unlockrecipe">
+    <Replace tag="[itemname]" value="entityname.pressurestabilizer" color="gui.orange" />
+  </Description>
+  <AddedRecipe itemidentifier="pressurestabilizer" />
+</Talent>
 </Talents>
