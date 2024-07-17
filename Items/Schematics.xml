@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+<!--Blank Blueprint. Can be used to copy and fabricate new schematics for complex recipes.-->
+<!-- Decide whether this is worth keeping. Would a system to copy schematics be worth it?-->
+<Item name="" identifier="blank_blueprint" description="" category="Misc" tags="smallitem,schematic" maxstacksize="32" maxstacksizecharacterinventory="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="20,39,162,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab"/>
+    <PreferredContainer secondary="researchcontainer,outpostengcab" spawnprobability="0.1"/>
+    <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="367,194,12,44"  origin="0.5,0.5" depth="0.8" />
+    <InventoryIcon texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="218,195,37,55" origin="0.5,0.5" />
+    <Body width="35" height="40" density="8" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect"/>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+        <RequiredItem identifier="carbon" />
+    </Fabricate>
+    <Deconstruct time="5"/>
+    <Price baseprice="20" sold="true">
+        <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="16"/>
+        <Price storeidentifier="merchantoutpost" multiplier="1.2" minavailable="8"/>
+        <Price storeidentifier="merchantcity" multiplier="1.1" minavailable="8"/>
+        <Price storeidentifier="merchantmilitary" multiplier="1.0" minavailable="8"/>
+        <Price storeidentifier="merchantmine" multiplier="1.3" minavailable="8"/>
+    </Price>  
+</Item>
+<!-- Captain -->
+<!--Gunsmithing Schematic-->
+<Item name="" identifier="gunsmith_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab"/>
+    <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.06"/>
+    <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab,abandonedengcab,pirateengcab,wreckengcab" spawnprobability="0.03"/>
+    <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="367,194,12,44"  origin="0.5,0.5" depth="0.8" />
+    <InventoryIcon texture="Content/Items/Misc/scribble1.png" sourcerect="0,0,768,1024" origin="0.5,0.5" />
+    <Body width="35" height="40" density="8" />
+    <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
+        <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <Conditional Condition="lte 0" />
+            <GiveTalentInfo talentidentifiers="known_schematic_gunsmith"/>
+            <RemoveItem />
+        </StatusEffect>
+    </Holdable>
+    <Price baseprice="500" minleveldifficulty="10" minavailable="1" buyingpricemultiplier="4">
+        <Price storeidentifier="merchantarmory" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantcity"/>
+    </Price>
+</Item>
+<!--Cigar Schematic-->
+<Item name="" identifier="sailorwithnoname_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab"/>
+    <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.06"/>
+    <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab,abandonedmedcab,piratemedcab,wreckmedcab" spawnprobability="0.03"/>
+    <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="367,194,12,44"  origin="0.5,0.5" depth="0.8" />
+    <InventoryIcon texture="Content/Items/Misc/scribble1.png" sourcerect="0,0,768,1024" origin="0.5,0.5" />
+    <Body width="35" height="40" density="8" />
+    <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
+        <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <Conditional Condition="lte 0" />
+            <GiveTalentInfo talentidentifiers="known_schematic_sailorwithnoname"/>
+            <RemoveItem />
+        </StatusEffect>
+    </Holdable>
+    <Price baseprice="500" minleveldifficulty="10" minavailable="1" buyingpricemultiplier="4">
+        <Price storeidentifier="merchantmedical" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantcity"/>
+    </Price>
+</Item>
+<!--Rum Schematic-->
+<Item name="" identifier="drunkensailor_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab"/>
+    <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.02"/>
+    <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab,abandonedmedcab,piratemedcab,wreckmedcab" spawnprobability="0.01"/>
+    <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="367,194,12,44"  origin="0.5,0.5" depth="0.8" />
+    <InventoryIcon texture="Content/Items/Misc/scribble1.png" sourcerect="0,0,768,1024" origin="0.5,0.5" />
+    <Body width="35" height="40" density="8" />
+    <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
+        <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <Conditional Condition="lte 0" />
+            <GiveTalentInfo talentidentifiers="known_schematic_drunkensailor"/>
+            <RemoveItem />
+        </StatusEffect>
+    </Holdable>
+    <Price baseprice="1000" minleveldifficulty="40" minavailable="1" buyingpricemultiplier="5">
+        <Price storeidentifier="merchantmedical" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantcity"/>
+    </Price>
+</Item>
+<!--Handcannon Schematic-->
+<Item name="" identifier="bigguns_schematic" description="" category="Misc" tags="smallitem,schematic" maxstacksize="8" scale="0.5" spritecolor="20,39,162,255" inventoryiconcolor="75,170,200,255" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+    <PreferredContainer primary="storagecab"/>
+    <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.01"/>
+    <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab,abandonedarmcab,piratearmcab,wreckarmcab" spawnprobability="0.01"/>
+    <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="367,194,12,44"  origin="0.5,0.5" depth="0.8" />
+    <InventoryIcon texture="Content/Items/Misc/scribble1.png" sourcerect="0,0,768,1024" origin="0.5,0.5" />
+    <Body width="35" height="40" density="8" />
+    <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
+        <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <Conditional Condition="lte 0" />
+            <GiveTalentInfo talentidentifiers="known_schematic_bigguns"/>
+            <RemoveItem />
+        </StatusEffect>
+    </Holdable>
+    <Price baseprice="2000" minleveldifficulty="50" minavailable="1" buyingpricemultiplier="3">
+        <Price storeidentifier="merchantarmory" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantcity"/>
+    </Price>
+</Item>
+</Items>
+
+    <!--
+      An example on using the PreferredContainer:
+      
+      <PreferredContainer primary="somespecialcontainer" secondary="locker" minamount="1" maxamount="1" spawnprobability="1"/>
+      
+          PreferredContainers are used for automatic item placement and to tell the bots where items belong to.
+          
+          Automatic item placement can be disabled by setting autofit="False" attribute in the ItemContainer definition or changing the property in the sub editor.
+          
+          Tags and identifiers are used indistinguishably: neither is given a priority over the other.
+      
+          The automatic item placement first looks for containers with an identifier or tag "somespecialcontainer".
+          If none found, will use the containers with the "locker" tag/identifier.      
+          In practice, this should fill all lockers (that have enough room) with one revolver, because there shouldn't be any containers with the primary tag/identifier.
+          
+          Note that each "PreferredContainer" element is evaluated separately and the probability is per container.
+          
+          The bots treat both the "primary" and the "secondary" as accepted containers. However, they prefer the "primary" containers. 
+          The evaluation is weight based: it's possible that the bots use a container marked as "secondary" or even a container that is not defined here, if it's close enough.
+          If you want to tell the bots that "only put certain items in this container", use the "Containable Restrictions" that can be defined in the sub editor.
+    -->
+
+        <!--
+      An example on using the Price elements:
+      
+      <Price baseprice="0" sold="true" soldelsewhere="false" buyingpricemultiplier="1.0" minamount="0" maxamount="0" canbespecial="true" minleveldifficulty="0" displaynonempty="false">
+        <Price storeidentifier="" multiplier="1.0" />
+      </Price>
+      
+          The above example includes all the attributes that can be used in the price definitions. The listed attribute values are the values the attributes will default to if they are
+          omitted in the definition.
+            
+            Parent price element attributes:
+                     baseprice = The default price of the item. Defaults to 0.
+                 soldelsewhere = Is the item sold at non-specified stores, i.e. stores that don't have their identifier specified in any of the child elements? Defaults to false.
+                  canbespecial = Can the item be a daily special or a requested good? Defaults to true.
+               displaynonempty = Should the number of owned non-empty items be specified in the store interface? Defaults to false.
+                 
+            Parent price element attributes that can be overridden in child elements:
+                          sold = Is the item sold at the specified stores or not? Defaults to true.
+              buyingmultiplier = Multiplier that can increase or decrease the cost of buying the item. Defaults to 1.0.
+                     minamount = The minimum number of this item stores will always have in stock. Defaults to 0.
+                     maxamount = The maximum number of this item stores can ever have in stock. Defaults to 0.
+            minleveldifficulty = The minimum difficulty level required for this item to appear in stores. Defaults to 0.
+            
+            Child price element attributes:
+              storeidentifiers = Human prefab identifiers of the store characters that will sell this item.
+                    multiplier = (multiplier * baseprice) will determine the price of the item at the store. Defaults to 1.0.
+    -->

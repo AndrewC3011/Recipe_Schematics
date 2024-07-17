@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Recipe Schematics" modversion="1.0.0" corepackage="False" gameversion="1.5.9.1">
+    <Item file="%ModDir%/Items/Schematics.xml"/>
+    <Talents file="%ModDir%/Talents/SchematicTalents.xml"/>
+    <Text file="%ModDir%/Text/English.xml"/>
+</contentpackage>

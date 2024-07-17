@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+
+<!-- Items -->
+<entityname.blank_blueprint>Blank Blueprint</entityname.blank_blueprint>
+<entitydescription.blank_blueprint>Can be used to copy and fabricate new schematics for complex recipes.</entitydescription.blank_blueprint>
+<entityname.gunsmith_schematic>Gunsmithing Schematic</entityname.gunsmith_schematic>
+<entitydescription.gunsmith_schematic>Allows the reader to learn how to fabricate Revolvers and Revolver Rounds.</entitydescription.gunsmith_schematic>
+<entityname.sailorwithnoname_schematic>Cigar Schematic</entityname.sailorwithnoname_schematic>
+<entitydescription.sailorwithnoname_schematic>Allows the reader to learn how to fabricate Cigars.</entitydescription.sailorwithnoname_schematic>
+<entityname.drunkensailor_schematic>Rum Schematic</entityname.drunkensailor_schematic>
+<entitydescription.drunkensailor_schematic>Allows the reader to learn how to fabricate Rum.</entitydescription.drunkensailor_schematic>
+<entityname.bigguns_schematic>Handcannon Schematic</entityname.bigguns_schematic>
+<entitydescription.bigguns_schematic>Allows the reader to learn how to fabricate the Handcannon and Handcannon Rounds.</entitydescription.bigguns_schematic>
+
+<!-- Talents -->
+ <talentname.known_schematic_gunsmith>Known Schematic: Gunsmith</talentname.known_schematic_gunsmith>
+ <talentdescription.known_schematic_gunsmith>You've read the Gunsmithing Schematic.</talentdescription.known_schematic_gunsmith>
+ <talentname.known_schematic_sailorwithnoname>Known Schematic: Cigars</talentname.known_schematic_sailorwithnoname>
+ <talentdescription.known_schematic_sailorwithnoname>You've read the Cigar Schematic.</talentdescription.known_schematic_sailorwithnoname>
+ <talentname.known_schematic_drunkensailor>Known Schematic: Rum</talentname.known_schematic_drunkensailor>
+ <talentdescription.known_schematic_drunkensailor>You've read the Rum Schematic.</talentdescription.known_schematic_drunkensailor>
+ <talentname.known_schematic_bigguns>Known Schematic: Handcannon</talentname.known_schematic_bigguns>
+ <talentdescription.known_schematic_bigguns>You've read the Handcannon Schematic.</talentdescription.known_schematic_bigguns>
+
+</infotexts>
