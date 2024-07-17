@@ -50,8 +50,8 @@
   <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,5" sheetelementsize="128,128"/>
   <Description tag="talentdescription.known_schematic_medicalcompanion"/>
   <Description tag="talentdescription.unlockrecipe">
-    <Replace tag="[itemname]" value="entityname.autoinjector" color="gui.orange" />
+    <Replace tag="[itemname]" value="entityname.autoinjectorheadset" color="gui.orange" />
   </Description>
-  <AddedRecipe itemidentifier="autoinjector" />
+  <AddedRecipe itemidentifier="autoinjectorheadset" />
 </Talent>
 </Talents>
